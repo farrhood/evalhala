@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class EvalhalaApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(EvalhalaApplication.class, args);
+
 	}
 }
