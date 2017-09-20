@@ -54,8 +54,6 @@ public class Evaluatie {
     }
 
 
-
-
     public String getTewerkstellingskansen() {
         return tewerkstellingskansen;
     }

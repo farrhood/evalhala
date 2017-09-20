@@ -1,0 +1,56 @@
+#body {
+
+}
+
+.dropdown {
+    width: 85px; /* dropdown class applied on first row is what is defining width of all row's table cells */ 
+}
+
+#top {
+    padding-top: 25px;
+}
+
+#top, #legend, #end, #button {
+    margin: auto;
+    width: 40%;
+}
+
+#button, #slider {
+    text-align: center;
+}
+
+#top, #legend, #slider {
+    margin-bottom: 50px;
+}
+
+#mid {
+    margin-bottom: 35px;
+}
+
+#footer {
+    margin-top: 50px;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+h3, h4 {
+    margin-bottom: 25px;
+}
+
+h1, h3, #legend {
+    text-align: center;
+    color: dimgrey;
+}
+
+#end {
+    text-align: center;
+}
+
+table {
+    font-size: 12px;
+}
+
+
+
