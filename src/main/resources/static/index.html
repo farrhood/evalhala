@@ -1876,7 +1876,7 @@
                                     <td>     
                                     
                                         <div class="form-group">
-                                            <textarea class="form-control" id="exampleTextarea"></textarea>
+                                            <textarea class="form-control" id="exampleTextarea" name="tewerkstellingskansen"></textarea>
                                         </div>
                                     </td>
             
@@ -1907,7 +1907,7 @@
                                     <td>     
                                     
                                         <div class="form-group">
-                                            <textarea class="form-control" id="exampleTextarea"></textarea>
+                                            <textarea class="form-control" id="exampleTextarea" name="bedrijvenlijst"></textarea>
                                         </div>
                                     </td>
             
@@ -1944,7 +1944,7 @@
                                     <td>     
                                     
                                         <div class="form-group">
-                                            <textarea class="form-control" id="exampleTextarea"></textarea>
+                                            <textarea class="form-control" id="exampleTextarea" name="algemenefeedback"></textarea>
                                         </div>
                                     </td>
             
@@ -2009,6 +2009,9 @@ $(document).ready(function(){
         var evaluation = {
             voornaam: $(this.voornaam).val(),
             achternaam: $(this.achternaam).val()
+
+
+
         };
 
         var json = JSON.stringify(evaluation);
@@ -2019,7 +2022,7 @@ $(document).ready(function(){
             contentType: 'application/json',
             data: json,
             success: function() {
-                alert('Bedankt voor uw input');
+                alert('Bedankt voor je medewerking!');
             }
         });
 
