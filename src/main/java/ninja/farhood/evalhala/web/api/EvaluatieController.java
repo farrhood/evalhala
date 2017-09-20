@@ -5,24 +5,29 @@ import ninja.farhood.evalhala.repository.EvaluatieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
+import java.net.URISyntaxException;
 
 @RestController
 public class EvaluatieController {
     @Autowired
     EvaluatieRepository er;
 
+    @RequestMapping(method= RequestMethod.GET, path="/api/evaluatie/{eid}", produces = "application/json")
+    public Evaluatie getEvaluatie(@PathVariable("eid") int eid) {
+        return er.findOne(eid);
+    }
+
     @RequestMapping(method= RequestMethod.POST, path="/api/evaluatie", consumes = "application/json")
-    public ResponseEntity<Void> createEvaluatie(Evaluatie e) {
-        System.out.println(e.getVoornaam());
-        System.out.println(e.getAchternaam());
-
+    public ResponseEntity<Evaluatie> createEvaluatie(@RequestBody  Evaluatie e) {
         er.save(e);
+        try {
+            return ResponseEntity.created(new URI("http://localhost:8080/api/evaluatie/" + e.getId())).body(null);
+        } catch (URISyntaxException e1) {
+            return ResponseEntity.status(500).body(null);
+        }
 
-        return new ResponseEntity<Void>(HttpStatus.CREATED);
     }
 }
