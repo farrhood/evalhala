@@ -22,7 +22,7 @@ public class Evaluatie {
 
     private String algemenefeedback;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.PERSIST)
     @JoinColumn(name="evaluatie_id")
     private List<CursusEval> cursusEvals = new ArrayList<>();
 

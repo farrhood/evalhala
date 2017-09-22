@@ -18,11 +18,11 @@ public class CursusEval {
 
     private int q3;
 
-    private int q4;
+    private String q4;
 
     private int q5;
 
-    private int q6;
+    private String q6;
 
     private int q7;
 
@@ -81,11 +81,11 @@ public class CursusEval {
         this.q3 = q3;
     }
 
-    public int getQ4() {
+    public String getQ4() {
         return q4;
     }
 
-    public void setQ4(int q4) {
+    public void setQ4(String q4) {
         this.q4 = q4;
     }
 
@@ -97,11 +97,11 @@ public class CursusEval {
         this.q5 = q5;
     }
 
-    public int getQ6() {
+    public String getQ6() {
         return q6;
     }
 
-    public void setQ6(int q6) {
+    public void setQ6(String q6) {
         this.q6 = q6;
     }
 
