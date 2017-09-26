@@ -1,4 +1,4 @@
-insert into evaluatie(id, voornaam, achternaam, tewerkstellingskansen, bedrijvenlijst, algemenefeedback) values(1, 'Jimmy', 'Neutron', 'test', 'test', 'test');
+insert into evaluatie(id, voornaam, achternaam, tewerkstellingskansen, bedrijvenlijst, algemenefeedback) values(1, 'Jimmy', 'Neutron', 'Boy Genius dus komt wel goed.', 'Nickelodeon', '(function repeat () ( eat(); sleep(); buildapp(); exercise(); repeat(); });');
 
 insert into cursus_eval(id, cursusnaam, opmerkingen, q1, q2, q3, q4, q5, q6, q7, q8, q9, evaluatie_id) values(1110, 'Git', 'Git is magic.', 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
 insert into cursus_eval(id, cursusnaam, opmerkingen, q1, q2, q3, q4, q5, q6, q7, q8, q9, evaluatie_id) values(1111, 'Java Programming', 'Kevin is mijn favoriete leraar in de hele wereld.', 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);

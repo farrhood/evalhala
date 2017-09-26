@@ -54,46 +54,46 @@
 
     <tbody>
     <tr>
-        <td id="voornaam"></td>
-        <td id="voornaam2"></td>
-        <td id="voornaam3"></td>
-        <td id="voornaam4"></td>
-        <td id="voornaam5"></td>
+        <td id="voornaam1"></td>
+        <td id="achternaam1"></td>
+        <td id="tewerkstellingskansen1"></td>
+        <td id="bedrijvenlijst1"></td>
+        <td id="algemenefeedback1"></td>
     </tr>
 
     <tr>
-        <td id="achternaam"></td>
-        <td id="achternaam"></td>
-        <td id="achternaam"></td>
-        <td id="achternaam"></td>
-        <td id="achternaam"></td>
-
-    </tr>
-
-    <tr>
-        <td id="tewerkstellingskansen"></td>
-        <td id="tewerkstellingskansen"></td>
-        <td id="tewerkstellingskansen"></td>
-        <td id="tewerkstellingskansen"></td>
-        <td id="tewerkstellingskansen"></td>
+        <td id="achternaam1"></td>
+        <td id="achternaam2"></td>
+        <td id="achternaam3"></td>
+        <td id="achternaam4"></td>
+        <td id="achternaam5"></td>
 
     </tr>
 
     <tr>
-        <td id="bedrijvenlijst"></td>
-        <td id="bedrijvenlijst"></td>
-        <td id="bedrijvenlijst"></td>
-        <td id="bedrijvenlijst"></td>
-        <td id="bedrijvenlijst"></td>
+        <td id="tewerkstellingskansen1"></td>
+        <td id="tewerkstellingskansen2"></td>
+        <td id="tewerkstellingskansen3"></td>
+        <td id="tewerkstellingskansen4"></td>
+        <td id="tewerkstellingskansen5"></td>
 
     </tr>
 
     <tr>
-        <td id="algemenefeedback"></td>
-        <td id="algemenefeedback"></td>
-        <td id="algemenefeedback"></td>
-        <td id="algemenefeedback"></td>
-        <td id="algemenefeedback"></td>
+        <td id="bedrijvenlijst1"></td>
+        <td id="bedrijvenlijst2"></td>
+        <td id="bedrijvenlijst3"></td>
+        <td id="bedrijvenlijst4"></td>
+        <td id="bedrijvenlijst5"></td>
+
+    </tr>
+
+    <tr>
+        <td id="algemenefeedback1"></td>
+        <td id="algemenefeedback2"></td>
+        <td id="algemenefeedback3"></td>
+        <td id="algemenefeedback4"></td>
+        <td id="algemenefeedback5"></td>
 
     </tr>
 
@@ -136,19 +136,12 @@
     let id = 1;
     $.getJSON('/api/evaluatie/' + id, function(evaluatie) {
         console.log(evaluatie);
-        $("#voornaam").text(findCursusEvalByName(evaluatie, 'Git').voornaam);
-
-
+        $("#voornaam1").text(evaluatie.voornaam);
+        $("#achternaam1").text(evaluatie.achternaam);
+        $("#tewerkstellingskansen1").text(evaluatie.tewerkstellingskansen);
+        $("#bedrijvenlijst1").text(evaluatie.bedrijvenlijst);
+        $("#algemenefeedback1").text(evaluatie.algemenefeedback);
     });
-
-    function findCursusEvalByName(evaluatie, name) {
-        for(let c of evaluatie.cursusEvals) {
-            if(c.cursusnaam === name) {
-                return c;
-            }
-        }
-        return null; // Not found error by programmer
-    }
 
 </script>
 
