@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>eVALHALLA</title>
+
+    <script src="jquery-3.2.1.js"></script>
+
+<style>
+
+    table {
+        margin-top: 50px;
+    }
+
+</style>
+
+
+</head>
+
+
+<body>
+
+<table class="table table-bordered table-hover" align="center" style="width:90%;table-layout:fixed">
+
+    <thead class="thead-inverse">
+    <tr>
+        <th colspan="2">Deelnemer</th>
+        <th colspan="2">Tewerkstelling</th>
+        <th colspan="1">Algemeen</th>
+
+    </tr>
+    </thead>
+
+    <thead>
+    <tr>
+        <th>Voornaam</th>
+        <th>Achternaam</th>
+        <th>Schatting tewerkstellingskansen</th>
+        <th>Gecontacteerde bedrijven</th>
+        <th>Opmerkingen</th>
+    </tr>
+    </thead>
+
+
+    <tbody>
+    <tr>
+        <td id="voornaam"></td>
+        <td id="voornaam2"></td>
+        <td id="voornaam3"></td>
+        <td id="voornaam4"></td>
+        <td id="voornaam5"></td>
+    </tr>
+
+    <tr>
+        <td id="achternaam"></td>
+        <td id="achternaam"></td>
+        <td id="achternaam"></td>
+        <td id="achternaam"></td>
+        <td id="achternaam"></td>
+
+    </tr>
+
+    <tr>
+        <td id="tewerkstellingskansen"></td>
+        <td id="tewerkstellingskansen"></td>
+        <td id="tewerkstellingskansen"></td>
+        <td id="tewerkstellingskansen"></td>
+        <td id="tewerkstellingskansen"></td>
+
+    </tr>
+
+    <tr>
+        <td id="bedrijvenlijst"></td>
+        <td id="bedrijvenlijst"></td>
+        <td id="bedrijvenlijst"></td>
+        <td id="bedrijvenlijst"></td>
+        <td id="bedrijvenlijst"></td>
+
+    </tr>
+
+    <tr>
+        <td id="algemenefeedback"></td>
+        <td id="algemenefeedback"></td>
+        <td id="algemenefeedback"></td>
+        <td id="algemenefeedback"></td>
+        <td id="algemenefeedback"></td>
+
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+
+    </tr>
+
+
+
+
+
+
+    </tbody>
+</table>
+
+<div id="button">
+    <!-- <input type="submit" value="Verzenden"> -->
+
+    <button onclick="window.location.href='inzendingen.html';" type="submit" class="btn btn-info">evaluaties</button>
+
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<script>
+
+    let id = 1;
+    $.getJSON('/api/evaluatie/' + id, function(evaluatie) {
+        console.log(evaluatie);
+        $("#voornaam").text(findCursusEvalByName(evaluatie, 'Git').voornaam);
+
+
+    });
+
+    function findCursusEvalByName(evaluatie, name) {
+        for(let c of evaluatie.cursusEvals) {
+            if(c.cursusnaam === name) {
+                return c;
+            }
+        }
+        return null; // Not found error by programmer
+    }
+
+</script>
+
+
+</body>
+</html>

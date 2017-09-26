@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>eVALHALLA</title>
+
+    <script src="jquery-3.2.1.js"></script>
+
+    <style>
+
+        table {
+            margin-top: 50px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<table class="table table-bordered table-hover" align="center" style="width:80%;table-layout:fixed">
+
+    <thead class="thead-inverse">
+    <tr>
+        <th colspan="6">Module</th>
+        <th colspan="3">Docent</th>
+        <th colspan="1">Syllabus</th>
+        <th colspan="1">Algemeen</th>
+
+    </tr>
+    </thead>
+
+    <thead>
+    <tr>
+        <th>Vak</th>
+        <th>Vind jij dit vak<br> belangrijk voor je<br> (latere) job?</th>
+        <th>Heb je<br> bijgeleerd?</th>
+        <th>Is alles wat volgens<br> jou belangrijk is<br> aan bod gekomen?</th>
+        <th>Wat vond je van<br> de duurtijd van dit vak? </th>
+        <th>Denk je de leerstof<br> te beheersen?</th>
+        <th>Vond je het<br> aangehouden<br> tempo OK?</th>
+        <th>Gaf de docent<br> degelijk les?</th>
+        <th>Hield de docent<br> rekening met verschillen<br> binnen de groep?</th>
+        <th>Ben je tevreden<br> over de syllabus?</th>
+        <th>Opmerkingen</th>
+    </tr>
+    </thead>
+
+
+    <tbody>
+        <tr>
+            <td><b>GIT</b> - Kevin</td>
+            <td id="gitq1"></td>
+            <td id="gitq2"></td>
+            <td id="gitq3"></td>
+            <td id="gitq4"></td>
+            <td id="gitq5"></td>
+            <td id="gitq6"></td>
+            <td id="gitq7"></td>
+            <td id="gitq8"></td>
+            <td id="gitq9"></td>
+            <td id="gitopmerkingen"></td>
+        </tr>
+
+        <tr>
+            <td><b>Java Programming</b> - Kevin</td>
+            <td id="javaprogrammingq1"></td>
+            <td id="javaprogrammingq2"></td>
+            <td id="javaprogrammingq3"></td>
+            <td id="javaprogrammingq4"></td>
+            <td id="javaprogrammingq5"></td>
+            <td id="javaprogrammingq6"></td>
+            <td id="javaprogrammingq7"></td>
+            <td id="javaprogrammingq8"></td>
+            <td id="javaprogrammingq9"></td>
+            <td id="javaprogrammingopmerkingen"></td>
+
+        </tr>
+
+        <tr>
+            <td><b>Sollicitatietraining</b> - Roel</td>
+            <td id="sollicitatietrainingq1"></td>
+            <td id="sollicitatietrainingq2"></td>
+            <td id="sollicitatietrainingq3"></td>
+            <td id="sollicitatietrainingq4"></td>
+            <td id="sollicitatietrainingq5"></td>
+            <td id="sollicitatietrainingq6"></td>
+            <td id="sollicitatietrainingq7"></td>
+            <td id="sollicitatietrainingq8"></td>
+            <td id="sollicitatietrainingq9"></td>
+            <td id="sollicitatietrainingopmerkingen"></td>
+
+        </tr>
+
+        <tr>
+            <td><b>Gradle & unit testing with Java</b>
+            <td id="gradleandunitq1"></td>
+            <td id="gradleandunitq2"></td>
+            <td id="gradleandunitq3"></td>
+            <td id="gradleandunitq4"></td>
+            <td id="gradleandunitq5"></td>
+            <td id="gradleandunitq6"></td>
+            <td id="gradleandunitq7"></td>
+            <td id="gradleandunitq8"></td>
+            <td id="gradleandunitq9"></td>
+            <td id="gradleandunitopmerkingen"></td>
+
+        </tr>
+
+        <tr>
+            <td><b>Communicatietraining</b> - Heidi</td>
+            <td id="communicatietrainingq1"></td>
+            <td id="communicatietrainingq2"></td>
+            <td id="communicatietrainingq3"></td>
+            <td id="communicatietrainingq4"></td>
+            <td id="communicatietrainingq5"></td>
+            <td id="communicatietrainingq6"></td>
+            <td id="communicatietrainingq7"></td>
+            <td id="communicatietrainingq8"></td>
+            <td id="communicatietrainingq9"></td>
+            <td id="communicatietrainingopmerkingen"></td>
+
+        </tr>
+
+        <tr>
+            <td><b>SQL queries</b> - Yves (Alain)</td>
+            <td id="sqlq1"></td>
+            <td id="sqlq2"></td>
+            <td id="sqlq3"></td>
+            <td id="sqlq4"></td>
+            <td id="sqlq5"></td>
+            <td id="sqlq6"></td>
+            <td id="sqlq7"></td>
+            <td id="sqlq8"></td>
+            <td id="sqlq9"></td>
+            <td id="sqlopmerkingen"></td>
+
+        </tr>
+
+        <tr>
+            <td><b>Persistence in Java</b> - Christian</td>
+            <td id="persistenceq1"></td>
+            <td id="persistenceq2"></td>
+            <td id="persistenceq3"></td>
+            <td id="persistenceq4"></td>
+            <td id="persistenceq5"></td>
+            <td id="persistenceq6"></td>
+            <td id="persistenceq7"></td>
+            <td id="persistenceq8"></td>
+            <td id="persistenceq9"></td>
+            <td id="persistenceopmerkingen"></td>
+
+        </tr>
+
+        <tr>
+            <td><b>GOF Design Patterns</b> - Christian</td>
+            <td id="designpatternsq1"></td>
+            <td id="designpatternsq2"></td>
+            <td id="designpatternsq3"></td>
+            <td id="designpatternsq4"></td>
+            <td id="designpatternsq5"></td>
+            <td id="designpatternsq6"></td>
+            <td id="designpatternsq7"></td>
+            <td id="designpatternsq8"></td>
+            <td id="designpatternsq9"></td>
+            <td id="designpatternsopmerkingen"></td>
+
+        </tr>
+
+        <tr>
+            <td><b>Working with HTML5 and CSS</b> - Nancy</td>
+            <td id="htmlcssq1"></td>
+            <td id="htmlcssq2"></td>
+            <td id="htmlcssq3"></td>
+            <td id="htmlcssq4"></td>
+            <td id="htmlcssq5"></td>
+            <td id="htmlcssq6"></td>
+            <td id="htmlcssq7"></td>
+            <td id="htmlcssq8"></td>
+            <td id="htmlcssq9"></td>
+            <td id="htmlcssopmerkingen"></td>
+
+        </tr>
+
+        <tr>
+            <td><b>Responsive webdesign</b> - Nancy</td>
+            <td id="responsivewebdesignq1"></td>
+            <td id="responsivewebdesignq2"></td>
+            <td id="responsivewebdesignq3"></td>
+            <td id="responsivewebdesignq4"></td>
+            <td id="responsivewebdesignq5"></td>
+            <td id="responsivewebdesignq6"></td>
+            <td id="responsivewebdesignq7"></td>
+            <td id="responsivewebdesignq8"></td>
+            <td id="responsivewebdesignq9"></td>
+            <td id="responsivewebdesignopmerkingen"></td>
+
+        </tr>
+
+        <tr>
+            <td><b>SASS/Less</b> - Nancy</td>
+            <td id="sasslessq1"></td>
+            <td id="sasslessq2"></td>
+            <td id="sasslessq3"></td>
+            <td id="sasslessq4"></td>
+            <td id="sasslessq5"></td>
+            <td id="sasslessq6"></td>
+            <td id="sasslessq7"></td>
+            <td id="sasslessq8"></td>
+            <td id="sasslessq9"></td>
+            <td id="sasslessopmerkingen"></td>
+
+        </tr>
+
+        <tr>
+            <td><b>JavaScript & ES6</b> - Kevin</td>
+            <td id="javascriptq1"></td>
+            <td id="javascriptq2"></td>
+            <td id="javascriptq3"></td>
+            <td id="javascriptq4"></td>
+            <td id="javascriptq5"></td>
+            <td id="javascriptq6"></td>
+            <td id="javascriptq7"></td>
+            <td id="javascriptq8"></td>
+            <td id="javascriptq9"></td>
+            <td id="javascriptopmerkingen"></td>
+
+        </tr>
+
+        <tr>
+            <td><b>Jquery Mobile</b> - Kevin</td>
+            <td id="jqueryq1"></td>
+            <td id="jqueryq2"></td>
+            <td id="jqueryq3"></td>
+            <td id="jqueryq4"></td>
+            <td id="jqueryq5"></td>
+            <td id="jqueryq6"></td>
+            <td id="jqueryq7"></td>
+            <td id="jqueryq8"></td>
+            <td id="jqueryq9"></td>
+            <td id="jqueryopmerkingen"></td>
+
+        </tr>
+
+
+
+
+    </tbody>
+</table>
+
+
+<div id="legend" style="margin-top: 55px;">
+
+
+    <p>Legende: &nbsp;&nbsp;&nbsp;<b>0</b> : ik weet het niet &nbsp;&nbsp;&nbsp;<b>1</b> : zeer zeker niet &nbsp;&nbsp;&nbsp;<b>2</b> : neen &nbsp;&nbsp;&nbsp;<b>3</b> : min of meer &nbsp;&nbsp;&nbsp;<b>4</b> : ja &nbsp;&nbsp;&nbsp;<b>5</b> : ja, heel zeker</p>
+
+</div>
+
+
+<div id="button">
+    <!-- <input type="submit" value="Verzenden"> -->
+
+    <button onclick="window.location.href='deelnemers.html';" type="submit" class="btn btn-info">cursisten</button>
+
+
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+<script>
+
+    let id = 1;
+    $.getJSON('/api/evaluatie/' + id, function(evaluatie) {
+        console.log(evaluatie);
+        $("#gitq1").text(findCursusEvalByName(evaluatie, 'Git').q1);
+        $("#gitq2").text(findCursusEvalByName(evaluatie, 'Git').q2);
+        $("#gitq3").text(findCursusEvalByName(evaluatie, 'Git').q3);
+        $("#gitq4").text(findCursusEvalByName(evaluatie, 'Git').q4);
+        $("#gitq5").text(findCursusEvalByName(evaluatie, 'Git').q5);
+        $("#gitq6").text(findCursusEvalByName(evaluatie, 'Git').q6);
+        $("#gitq7").text(findCursusEvalByName(evaluatie, 'Git').q7);
+        $("#gitq8").text(findCursusEvalByName(evaluatie, 'Git').q8);
+        $("#gitq9").text(findCursusEvalByName(evaluatie, 'Git').q9);
+        $("#gitopmerkingen").text(findCursusEvalByName(evaluatie, 'Git').opmerkingen);
+
+        $("#javaprogrammingq1").text(findCursusEvalByName(evaluatie, 'Java Programming').q1);
+        $("#javaprogrammingq2").text(findCursusEvalByName(evaluatie, 'Java Programming').q2);
+        $("#javaprogrammingq3").text(findCursusEvalByName(evaluatie, 'Java Programming').q3);
+        $("#javaprogrammingq4").text(findCursusEvalByName(evaluatie, 'Java Programming').q4);
+        $("#javaprogrammingq5").text(findCursusEvalByName(evaluatie, 'Java Programming').q5);
+        $("#javaprogrammingq6").text(findCursusEvalByName(evaluatie, 'Java Programming').q6);
+        $("#javaprogrammingq7").text(findCursusEvalByName(evaluatie, 'Java Programming').q7);
+        $("#javaprogrammingq8").text(findCursusEvalByName(evaluatie, 'Java Programming').q8);
+        $("#javaprogrammingq9").text(findCursusEvalByName(evaluatie, 'Java Programming').q9);
+        $("#javaprogrammingopmerkingen").text(findCursusEvalByName(evaluatie, 'Java Programming').opmerkingen);
+
+        $("#sollicitatietrainingq1").text(findCursusEvalByName(evaluatie, 'Sollicitatietraining').q1);
+        $("#sollicitatietrainingq2").text(findCursusEvalByName(evaluatie, 'Sollicitatietraining').q2);
+        $("#sollicitatietrainingq3").text(findCursusEvalByName(evaluatie, 'Sollicitatietraining').q3);
+        $("#sollicitatietrainingq4").text(findCursusEvalByName(evaluatie, 'Sollicitatietraining').q4);
+        $("#sollicitatietrainingq5").text(findCursusEvalByName(evaluatie, 'Sollicitatietraining').q5);
+        $("#sollicitatietrainingq6").text(findCursusEvalByName(evaluatie, 'Sollicitatietraining').q6);
+        $("#sollicitatietrainingq7").text(findCursusEvalByName(evaluatie, 'Sollicitatietraining').q7);
+        $("#sollicitatietrainingq8").text(findCursusEvalByName(evaluatie, 'Sollicitatietraining').q8);
+        $("#sollicitatietrainingq9").text(findCursusEvalByName(evaluatie, 'Sollicitatietraining').q9);
+        $("#sollicitatietrainingopmerkingen").text(findCursusEvalByName(evaluatie, 'Sollicitatietraining').opmerkingen);
+
+        $("#gradleandunitq1").text(findCursusEvalByName(evaluatie, 'Gradle & unit testing with Java').q1);
+        $("#gradleandunitq2").text(findCursusEvalByName(evaluatie, 'Gradle & unit testing with Java').q2);
+        $("#gradleandunitq3").text(findCursusEvalByName(evaluatie, 'Gradle & unit testing with Java').q3);
+        $("#gradleandunitq4").text(findCursusEvalByName(evaluatie, 'Gradle & unit testing with Java').q4);
+        $("#gradleandunitq5").text(findCursusEvalByName(evaluatie, 'Gradle & unit testing with Java').q5);
+        $("#gradleandunitq6").text(findCursusEvalByName(evaluatie, 'Gradle & unit testing with Java').q6);
+        $("#gradleandunitq7").text(findCursusEvalByName(evaluatie, 'Gradle & unit testing with Java').q7);
+        $("#gradleandunitq8").text(findCursusEvalByName(evaluatie, 'Gradle & unit testing with Java').q8);
+        $("#gradleandunitq9").text(findCursusEvalByName(evaluatie, 'Gradle & unit testing with Java').q9);
+        $("#gradleandunitopmerkingen").text(findCursusEvalByName(evaluatie, 'Gradle & unit testing with Java').opmerkingen);
+
+        $("#communicatietrainingq1").text(findCursusEvalByName(evaluatie, 'Communicatietraining').q1);
+        $("#communicatietrainingq2").text(findCursusEvalByName(evaluatie, 'Communicatietraining').q2);
+        $("#communicatietrainingq3").text(findCursusEvalByName(evaluatie, 'Communicatietraining').q3);
+        $("#communicatietrainingq4").text(findCursusEvalByName(evaluatie, 'Communicatietraining').q4);
+        $("#communicatietrainingq5").text(findCursusEvalByName(evaluatie, 'Communicatietraining').q5);
+        $("#communicatietrainingq6").text(findCursusEvalByName(evaluatie, 'Communicatietraining').q6);
+        $("#communicatietrainingq7").text(findCursusEvalByName(evaluatie, 'Communicatietraining').q7);
+        $("#communicatietrainingq8").text(findCursusEvalByName(evaluatie, 'Communicatietraining').q8);
+        $("#communicatietrainingq9").text(findCursusEvalByName(evaluatie, 'Communicatietraining').q9);
+        $("#communicatietrainingopmerkingen").text(findCursusEvalByName(evaluatie, 'Communicatietraining').opmerkingen);
+
+        $("#sqlq1").text(findCursusEvalByName(evaluatie, 'SQL queries').q1);
+        $("#sqlq2").text(findCursusEvalByName(evaluatie, 'SQL queries').q2);
+        $("#sqlq3").text(findCursusEvalByName(evaluatie, 'SQL queries').q3);
+        $("#sqlq4").text(findCursusEvalByName(evaluatie, 'SQL queries').q4);
+        $("#sqlq5").text(findCursusEvalByName(evaluatie, 'SQL queries').q5);
+        $("#sqlq6").text(findCursusEvalByName(evaluatie, 'SQL queries').q6);
+        $("#sqlq7").text(findCursusEvalByName(evaluatie, 'SQL queries').q7);
+        $("#sqlq8").text(findCursusEvalByName(evaluatie, 'SQL queries').q8);
+        $("#sqlq9").text(findCursusEvalByName(evaluatie, 'SQL queries').q9);
+        $("#sqlopmerkingen").text(findCursusEvalByName(evaluatie, 'SQL queries').opmerkingen);
+
+        $("#persistenceq1").text(findCursusEvalByName(evaluatie, 'Persistence in Java').q1);
+        $("#persistenceq2").text(findCursusEvalByName(evaluatie, 'Persistence in Java').q2);
+        $("#persistenceq3").text(findCursusEvalByName(evaluatie, 'Persistence in Java').q3);
+        $("#persistenceq4").text(findCursusEvalByName(evaluatie, 'Persistence in Java').q4);
+        $("#persistenceq5").text(findCursusEvalByName(evaluatie, 'Persistence in Java').q5);
+        $("#persistenceq6").text(findCursusEvalByName(evaluatie, 'Persistence in Java').q6);
+        $("#persistenceq7").text(findCursusEvalByName(evaluatie, 'Persistence in Java').q7);
+        $("#persistenceq8").text(findCursusEvalByName(evaluatie, 'Persistence in Java').q8);
+        $("#persistenceq9").text(findCursusEvalByName(evaluatie, 'Persistence in Java').q9);
+        $("#persistenceopmerkingen").text(findCursusEvalByName(evaluatie, 'Persistence in Java').opmerkingen);
+
+        $("#designpatternsq1").text(findCursusEvalByName(evaluatie, 'GOF Design Patterns').q1);
+        $("#designpatternsq2").text(findCursusEvalByName(evaluatie, 'GOF Design Patterns').q2);
+        $("#designpatternsq3").text(findCursusEvalByName(evaluatie, 'GOF Design Patterns').q3);
+        $("#designpatternsq4").text(findCursusEvalByName(evaluatie, 'GOF Design Patterns').q4);
+        $("#designpatternsq5").text(findCursusEvalByName(evaluatie, 'GOF Design Patterns').q5);
+        $("#designpatternsq6").text(findCursusEvalByName(evaluatie, 'GOF Design Patterns').q6);
+        $("#designpatternsq7").text(findCursusEvalByName(evaluatie, 'GOF Design Patterns').q7);
+        $("#designpatternsq8").text(findCursusEvalByName(evaluatie, 'GOF Design Patterns').q8);
+        $("#designpatternsq9").text(findCursusEvalByName(evaluatie, 'GOF Design Patterns').q9);
+        $("#designpatternsopmerkingen").text(findCursusEvalByName(evaluatie, 'GOF Design Patterns').opmerkingen);
+
+        $("#htmlcssq1").text(findCursusEvalByName(evaluatie, 'Working with HTML5 and CSS').q1);
+        $("#htmlcssq2").text(findCursusEvalByName(evaluatie, 'Working with HTML5 and CSS').q2);
+        $("#htmlcssq3").text(findCursusEvalByName(evaluatie, 'Working with HTML5 and CSS').q3);
+        $("#htmlcssq4").text(findCursusEvalByName(evaluatie, 'Working with HTML5 and CSS').q4);
+        $("#htmlcssq5").text(findCursusEvalByName(evaluatie, 'Working with HTML5 and CSS').q5);
+        $("#htmlcssq6").text(findCursusEvalByName(evaluatie, 'Working with HTML5 and CSS').q6);
+        $("#htmlcssq7").text(findCursusEvalByName(evaluatie, 'Working with HTML5 and CSS').q7);
+        $("#htmlcssq8").text(findCursusEvalByName(evaluatie, 'Working with HTML5 and CSS').q8);
+        $("#htmlcssq9").text(findCursusEvalByName(evaluatie, 'Working with HTML5 and CSS').q9);
+        $("#htmlcssopmerkingen").text(findCursusEvalByName(evaluatie, 'Working with HTML5 and CSS').opmerkingen);
+
+        $("#responsivewebdesignq1").text(findCursusEvalByName(evaluatie, 'Responsive webdesign').q1);
+        $("#responsivewebdesignq2").text(findCursusEvalByName(evaluatie, 'Responsive webdesign').q2);
+        $("#responsivewebdesignq3").text(findCursusEvalByName(evaluatie, 'Responsive webdesign').q3);
+        $("#responsivewebdesignq4").text(findCursusEvalByName(evaluatie, 'Responsive webdesign').q4);
+        $("#responsivewebdesignq5").text(findCursusEvalByName(evaluatie, 'Responsive webdesign').q5);
+        $("#responsivewebdesignq6").text(findCursusEvalByName(evaluatie, 'Responsive webdesign').q6);
+        $("#responsivewebdesignq7").text(findCursusEvalByName(evaluatie, 'Responsive webdesign').q7);
+        $("#responsivewebdesignq8").text(findCursusEvalByName(evaluatie, 'Responsive webdesign').q8);
+        $("#responsivewebdesignq9").text(findCursusEvalByName(evaluatie, 'Responsive webdesign').q9);
+        $("#responsivewebdesignopmerkingen").text(findCursusEvalByName(evaluatie, 'Responsive webdesign').opmerkingen);
+        
+        $("#sasslessq1").text(findCursusEvalByName(evaluatie, 'SASS/Less').q1);
+        $("#sasslessq2").text(findCursusEvalByName(evaluatie, 'SASS/Less').q2);
+        $("#sasslessq3").text(findCursusEvalByName(evaluatie, 'SASS/Less').q3);
+        $("#sasslessq4").text(findCursusEvalByName(evaluatie, 'SASS/Less').q4);
+        $("#sasslessq5").text(findCursusEvalByName(evaluatie, 'SASS/Less').q5);
+        $("#sasslessq6").text(findCursusEvalByName(evaluatie, 'SASS/Less').q6);
+        $("#sasslessq7").text(findCursusEvalByName(evaluatie, 'SASS/Less').q7);
+        $("#sasslessq8").text(findCursusEvalByName(evaluatie, 'SASS/Less').q8);
+        $("#sasslessq9").text(findCursusEvalByName(evaluatie, 'SASS/Less').q9);
+        $("#sasslessopmerkingen").text(findCursusEvalByName(evaluatie, 'SASS/Less').opmerkingen);
+
+        $("#javascriptq1").text(findCursusEvalByName(evaluatie, 'JavaScript & ES6').q1);
+        $("#javascriptq2").text(findCursusEvalByName(evaluatie, 'JavaScript & ES6').q2);
+        $("#javascriptq3").text(findCursusEvalByName(evaluatie, 'JavaScript & ES6').q3);
+        $("#javascriptq4").text(findCursusEvalByName(evaluatie, 'JavaScript & ES6').q4);
+        $("#javascriptq5").text(findCursusEvalByName(evaluatie, 'JavaScript & ES6').q5);
+        $("#javascriptq6").text(findCursusEvalByName(evaluatie, 'JavaScript & ES6').q6);
+        $("#javascriptq7").text(findCursusEvalByName(evaluatie, 'JavaScript & ES6').q7);
+        $("#javascriptq8").text(findCursusEvalByName(evaluatie, 'JavaScript & ES6').q8);
+        $("#javascriptq9").text(findCursusEvalByName(evaluatie, 'JavaScript & ES6').q9);
+        $("#javascriptopmerkingen").text(findCursusEvalByName(evaluatie, 'JavaScript & ES6').opmerkingen);
+
+        $("#jqueryq1").text(findCursusEvalByName(evaluatie, 'Jquery Mobile').q1);
+        $("#jqueryq2").text(findCursusEvalByName(evaluatie, 'Jquery Mobile').q2);
+        $("#jqueryq3").text(findCursusEvalByName(evaluatie, 'Jquery Mobile').q3);
+        $("#jqueryq4").text(findCursusEvalByName(evaluatie, 'Jquery Mobile').q4);
+        $("#jqueryq5").text(findCursusEvalByName(evaluatie, 'Jquery Mobile').q5);
+        $("#jqueryq6").text(findCursusEvalByName(evaluatie, 'Jquery Mobile').q6);
+        $("#jqueryq7").text(findCursusEvalByName(evaluatie, 'Jquery Mobile').q7);
+        $("#jqueryq8").text(findCursusEvalByName(evaluatie, 'Jquery Mobile').q8);
+        $("#jqueryq9").text(findCursusEvalByName(evaluatie, 'Jquery Mobile').q9);
+        $("#jqueryopmerkingen").text(findCursusEvalByName(evaluatie, 'Jquery Mobile').opmerkingen);
+
+    });
+
+    function findCursusEvalByName(evaluatie, name) {
+        for(let c of evaluatie.cursusEvals) {
+            if(c.cursusnaam === name) {
+                return c;
+            }
+        }
+        return null; // Not found error by programmer
+    }
+
+</script>
+
+
+</body>
+</html>

@@ -20,13 +20,18 @@
 
 <body>
 
+<br>
+
+<center><img id="jobber" src="Jobber.png"></center>
+
 
 <div id="body">
-    
-        <form action=" ">
+
+        <form id="myform" action="" onsubmit="event.preventDefault(); validateMyForm();">
 
 
     <div id="top">
+
 
         <h1>TUSSENTIJDSE EVALUATIE</h1>
         <h3>Mobiele applicatie ontwikkelaar - Heverlee</h3>
@@ -34,11 +39,11 @@
           <div class="row">
               
             <div class="col">
-              <input type="text" class="form-control" placeholder="First name" name="voornaam">
+              <input type="text" class="form-control" placeholder="First name" name="voornaam" required>
             </div>
               
             <div class="col">
-              <input type="text" class="form-control" placeholder="Last name" name="achternaam">
+              <input type="text" class="form-control" placeholder="Last name" name="achternaam" required>
             </div>
               
           </div>
@@ -101,7 +106,8 @@
 				<td><b>GIT</b> - Kevin</td>
 				<td>
 
-                    <select class="form-control dropdown" name="gitq1">
+                    <select id="sendTo" class="form-control dropdown" name="gitq1">
+                      <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -114,6 +120,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="gitq2">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -126,6 +133,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="gitq3">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -139,17 +147,17 @@
                 <td>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="gitq4" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="gitq4" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="gitq4" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="gitq4" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="gitq4" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="gitq4" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -157,6 +165,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="gitq5">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -170,17 +179,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="gitq6" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="gitq6" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="gitq6" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="gitq6" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="gitq6" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="gitq6" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -188,6 +197,7 @@
 <td>
 
                     <select class="form-control dropdown" name="gitq7">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -200,6 +210,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="gitq8">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -212,6 +223,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="gitq9">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -243,6 +255,7 @@
 				<td>
 
                     <select class="form-control dropdown" name="javaprogrammingq1">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -255,6 +268,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="javaprogrammingq2">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -267,6 +281,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="javaprogrammingq3">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -281,17 +296,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="javaprogrammingq4" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="javaprogrammingq4" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="javaprogrammingq4" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="javaprogrammingq4" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="javaprogrammingq4" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="javaprogrammingq4" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -299,6 +314,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="javaprogrammingq5">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -312,17 +328,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="javaprogrammingq6" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="javaprogrammingq6" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="javaprogrammingq6" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="javaprogrammingq6" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="javaprogrammingq6" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="javaprogrammingq6" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -330,6 +346,7 @@
                 <td>
 
                     <select class="form-control dropdown" name="javaprogrammingq7">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -342,6 +359,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="javaprogrammingq8">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -354,6 +372,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="javaprogrammingq9">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -387,6 +406,7 @@
 				<td>
 
                     <select class="form-control dropdown" name="sollicitatietrainingq1">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -399,6 +419,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="q2">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -411,6 +432,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="q3">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -425,17 +447,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="sollicitatietrainingq4" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="sollicitatietrainingq4" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="sollicitatietrainingq4" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="sollicitatietrainingq4" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="sollicitatietrainingq4" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="sollicitatietrainingq4" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -443,6 +465,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="sollicitatietrainingq5">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -456,17 +479,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="sollicitatietrainingq6" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="sollicitatietrainingq6" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="sollicitatietrainingq6" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="sollicitatietrainingq6" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="sollicitatietrainingq6" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="sollicitatietrainingq6" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -474,6 +497,7 @@
 <td>
 
                     <select class="form-control dropdown" name="sollicitatietrainingq7">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -486,6 +510,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="sollicitatietrainingq8">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -498,6 +523,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="sollicitatietrainingq9">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -530,6 +556,7 @@
 				<td>
 
                     <select class="form-control dropdown" name="gradleandunitq1">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -542,6 +569,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="gradleandunitq2">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -554,6 +582,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="gradleandunitq3">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -568,17 +597,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="gradleandunitq4" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="gradleandunitq4" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="gradleandunitq4" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="gradleandunitq4" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="gradleandunitq4" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="gradleandunitq4" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -586,6 +615,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="gradleandunitq5">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -599,17 +629,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="gradleandunitq6" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="gradleandunitq6" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="gradleandunitq6" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="gradleandunitq6" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="gradleandunitq6" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="gradleandunitq6" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -617,6 +647,7 @@
                 <td>
 
                     <select class="form-control dropdown" name="gradleandunitq7">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -629,6 +660,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="gradleandunitq8">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -641,6 +673,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="gradleandunitq9">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -674,6 +707,7 @@
 				<td>
 
                     <select class="form-control dropdown" name="communicatietrainingq1">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -686,6 +720,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="communicatietrainingq2">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -698,6 +733,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="communicatietrainingq3">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -712,17 +748,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="communicatietrainingq4" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="communicatietrainingq4" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="communicatietrainingq4" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="communicatietrainingq4" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="communicatietrainingq4" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="communicatietrainingq4" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -730,6 +766,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="communicatietrainingq5">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -743,17 +780,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="communicatietrainingq6" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="communicatietrainingq6" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="communicatietrainingq6" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="communicatietrainingq6" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="communicatietrainingq6" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="communicatietrainingq6" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -761,6 +798,7 @@
 <td>
 
                     <select class="form-control dropdown" name="communicatietrainingq7">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -773,6 +811,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="communicatietrainingq8">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -785,6 +824,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="communicatietrainingq9">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -816,6 +856,7 @@
 				<td>
 
                     <select class="form-control dropdown" name="sqlq1">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -828,6 +869,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="sqlq2">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -840,6 +882,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="sqlq3">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -854,17 +897,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="sqlq4" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="sqlq4" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="sqlq4" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="sqlq4" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="sqlq4" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="sqlq4" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -872,6 +915,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="sqlq5">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -885,17 +929,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="sqlq6" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="sqlq6" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="sqlq6" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="sqlq6" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="sqlq6" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="sqlq6" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -903,6 +947,7 @@
                 <td>
 
                     <select class="form-control dropdown" name="sqlq7">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -915,6 +960,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="sqlq8">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -927,6 +973,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="sqlq9">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -960,6 +1007,7 @@
 				<td>
 
                     <select class="form-control dropdown" name="persistenceq1">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -972,6 +1020,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="persistenceq2">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -984,6 +1033,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="persistenceq3">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -998,17 +1048,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="persistenceq4" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="persistenceq4" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="persistenceq4" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="persistenceq4" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="persistenceq4" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="persistenceq4" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -1016,6 +1066,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="persistenceq5">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1029,17 +1080,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="persistenceq6" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="persistenceq6" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="persistenceq6" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="persistenceq6" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="persistenceq6" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="persistenceq6" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -1047,6 +1098,7 @@
 <td>
 
                     <select class="form-control dropdown" name="persistenceq7">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1059,6 +1111,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="persistenceq8">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1071,6 +1124,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="persistenceq9">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1102,6 +1156,7 @@
 				<td>
 
                     <select class="form-control dropdown" name="designpatternsq1">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1114,6 +1169,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="designpatternsq2">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1126,6 +1182,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="designpatternsq3">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1140,17 +1197,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="designpatternsq4" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="designpatternsq4" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="designpatternsq4" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="designpatternsq4" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="designpatternsq4" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="designpatternsq4" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -1158,6 +1215,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="designpatternsq5">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1171,17 +1229,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="designpatternsq6" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="designpatternsq6" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="designpatternsq6" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="designpatternsq6" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="designpatternsq6" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="designpatternsq6" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -1189,6 +1247,7 @@
                 <td>
 
                     <select class="form-control dropdown" name="designpatternsq7">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1201,6 +1260,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="designpatternsq8">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1213,6 +1273,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="designpatternsq9">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1245,6 +1306,7 @@
 				<td>
 
                     <select class="form-control dropdown" name="htmlcssq1">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1257,6 +1319,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="htmlcssq2">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1269,6 +1332,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="htmlcssq3">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1283,17 +1347,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="htmlcssq4" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="htmlcssq4" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="htmlcssq4" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="htmlcssq4" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="htmlcssq4" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="htmlcssq4" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -1301,6 +1365,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="htmlcssq5">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1314,17 +1379,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="htmlcssq6" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="htmlcssq6" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="htmlcssq6" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="htmlcssq6" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="htmlcssq6" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="htmlcssq6" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -1332,6 +1397,7 @@
 <td>
 
                     <select class="form-control dropdown" name="htmlcssq7">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1344,6 +1410,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="htmlcssq8">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1356,6 +1423,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="htmlcssq9">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1387,6 +1455,7 @@
 				<td>
 
                     <select class="form-control dropdown" name="responsivewebdesignq1">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1399,6 +1468,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="responsivewebdesignq2">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1411,6 +1481,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="responsivewebdesignq3">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1425,17 +1496,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="responsivewebdesignq4" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="responsivewebdesignq4" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="responsivewebdesignq4" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="responsivewebdesignq4" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="responsivewebdesignq4" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="responsivewebdesignq4" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -1443,6 +1514,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="responsivewebdesignq5">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1456,17 +1528,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="responsivewebdesignq6" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="responsivewebdesignq6" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="responsivewebdesignq6" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="responsivewebdesignq6" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="responsivewebdesignq6" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="responsivewebdesignq6" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -1474,6 +1546,7 @@
                 <td>
 
                     <select class="form-control dropdown" name="responsivewebdesignq7">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1486,6 +1559,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="responsivewebdesignq8">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1498,6 +1572,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="responsivewebdesignq9">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1533,6 +1608,7 @@
 				<td>
 
                     <select class="form-control dropdown" name="sasslessq1">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1545,6 +1621,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="sasslessq2">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1557,6 +1634,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="sasslessq3">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1571,17 +1649,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="sasslessq4" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="sasslessq4" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="sasslessq4" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="sasslessq4" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="sasslessq4" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="sasslessq4" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -1589,6 +1667,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="sasslessq5">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1602,17 +1681,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="sasslessq6" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="sasslessq6" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="sasslessq6" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="sasslessq6" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="sasslessq6" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="sasslessq6" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -1620,6 +1699,7 @@
                 <td>
 
                     <select class="form-control dropdown" name="sasslessq7">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1632,6 +1712,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="sasslessq8">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1644,6 +1725,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="sasslessq9">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1678,6 +1760,7 @@
 				<td>
 
                     <select class="form-control dropdown" name="javascriptq1">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1690,6 +1773,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="javascriptq2">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1702,6 +1786,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="javascriptq3">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1716,17 +1801,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="javascriptq4" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="javascriptq4" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="javascriptq4" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="javascriptq4" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="javascriptq4" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="javascriptq4" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -1734,6 +1819,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="javascriptq5">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1747,17 +1833,17 @@
                   
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="javascriptq6" id="inlineRadio1" value="1"> Te kort
+                            <input class="form-check-input" type="radio" name="javascriptq6" id="" value="6"> Te kort
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="javascriptq6" id="inlineRadio2" value="2"> OK
+                            <input class="form-check-input" type="radio" name="javascriptq6" id="" value="7"> OK
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="javascriptq6" id="inlineRadio3" value="3"> Te lang
+                            <input class="form-check-input" type="radio" name="javascriptq6" id="" value="8"> Te lang
                         </label>
                     </div>  
                 
@@ -1765,6 +1851,7 @@
                 <td>
 
                     <select class="form-control dropdown" name="javascriptq7">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1777,6 +1864,7 @@
 				<td>
                   
                     <select class="form-control dropdown" name="javascriptq8">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1789,6 +1877,7 @@
 				<td>
                     
                     <select class="form-control dropdown" name="javascriptq9">
+                        <option value="-1">select</option>
                       <option value="0">?</option>
                       <option value="1">--</option>
                       <option value="2">-</option>
@@ -1815,7 +1904,164 @@
                 </td>
             
             </tr>
-                
+
+
+
+
+
+
+
+
+
+              <tr>
+                  <td><b>Jquery Mobile</b> - Kevin</td>
+                  <td>
+
+                      <select class="form-control dropdown" name="jqueryq1">
+                          <option value="-1">select</option>
+                          <option value="0">?</option>
+                          <option value="1">--</option>
+                          <option value="2">-</option>
+                          <option value="3">+-</option>
+                          <option value="4">+</option>
+                          <option value="5">++</option>
+                      </select>
+
+                  </td>
+                  <td>
+
+                      <select class="form-control dropdown" name="jqueryq2">
+                          <option value="-1">select</option>
+                          <option value="0">?</option>
+                          <option value="1">--</option>
+                          <option value="2">-</option>
+                          <option value="3">+-</option>
+                          <option value="4">+</option>
+                          <option value="5">++</option>
+                      </select>
+
+                  </td>
+                  <td>
+
+                      <select class="form-control dropdown" name="jqueryq3">
+                          <option value="-1">select</option>
+                          <option value="0">?</option>
+                          <option value="1">--</option>
+                          <option value="2">-</option>
+                          <option value="3">+-</option>
+                          <option value="4">+</option>
+                          <option value="5">++</option>
+                      </select>
+
+                  </td>
+
+                  <td>
+
+                      <div class="form-check">
+                          <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="jqueryq4" id="" value="6"> Te kort
+                          </label>
+                      </div>
+                      <div class="form-check">
+                          <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="jqueryq4" id="" value="7"> OK
+                          </label>
+                      </div>
+                      <div class="form-check">
+                          <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="jqueryq4" id="" value="8"> Te lang
+                          </label>
+                      </div>
+
+                  </td>
+                  <td>
+
+                      <select class="form-control dropdown" name="jqueryq5">
+                          <option value="-1">select</option>
+                          <option value="0">?</option>
+                          <option value="1">--</option>
+                          <option value="2">-</option>
+                          <option value="3">+-</option>
+                          <option value="4">+</option>
+                          <option value="5">++</option>
+                      </select>
+
+                  </td>
+                  <td>
+
+                      <div class="form-check">
+                          <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="jqueryq6" id="" value="6"> Te kort
+                          </label>
+                      </div>
+                      <div class="form-check">
+                          <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="jqueryq6" id="" value="7"> OK
+                          </label>
+                      </div>
+                      <div class="form-check">
+                          <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="jqueryq6" id="" value="8"> Te lang
+                          </label>
+                      </div>
+
+                  </td>
+                  <td>
+
+                      <select class="form-control dropdown" name="jqueryq7">
+                          <option value="-1">select</option>
+                          <option value="0">?</option>
+                          <option value="1">--</option>
+                          <option value="2">-</option>
+                          <option value="3">+-</option>
+                          <option value="4">+</option>
+                          <option value="5">++</option>
+                      </select>
+
+                  </td>
+                  <td>
+
+                      <select class="form-control dropdown" name="jqueryq8">
+                          <option value="-1">select</option>
+                          <option value="0">?</option>
+                          <option value="1">--</option>
+                          <option value="2">-</option>
+                          <option value="3">+-</option>
+                          <option value="4">+</option>
+                          <option value="5">++</option>
+                      </select>
+
+                  </td>
+                  <td>
+
+                      <select class="form-control dropdown" name="jqueryq9">
+                          <option value="-1">select</option>
+                          <option value="0">?</option>
+                          <option value="1">--</option>
+                          <option value="2">-</option>
+                          <option value="3">+-</option>
+                          <option value="4">+</option>
+                          <option value="5">++</option>
+                      </select>
+
+                  </td>
+
+              </tr>
+
+
+
+
+              <tr>
+
+                  <td>Opmerkingen:</td>
+
+                  <td colspan="10">
+                      <div class="form-group">
+                          <textarea class="form-control" id="exampleTextarea" rows="3" name="jqueryopmerkingen"></textarea>
+                      </div>
+                  </td>
+
+              </tr>
           
                 
                 
@@ -1875,7 +2121,7 @@
                                     <td>     
                                     
                                         <div class="form-group">
-                                            <textarea class="form-control" id="exampleTextarea" name="tewerkstellingskansen"></textarea>
+                                            <textarea class="form-control" id="exampleTextarea" name="tewerkstellingskansen" required></textarea>
                                         </div>
                                     </td>
             
@@ -1906,7 +2152,7 @@
                                     <td>     
                                     
                                         <div class="form-group">
-                                            <textarea class="form-control" id="exampleTextarea" name="bedrijvenlijst"></textarea>
+                                            <textarea class="form-control" id="exampleTextarea" name="bedrijvenlijst" required></textarea>
                                         </div>
                                     </td>
             
@@ -1961,20 +2207,20 @@
             </div>
         
     	<!-- </div> -->
-            
-            
-            
-    <div id="slider">
-            
-        <label for="slider-fill">Welke score geef je deze opleiding op 100?</label><br>
-        <input name="slider-fill" id="slider-fill" value="60" min="0" max="100" step="1" data-highlight="true" type="range">
 
-    </div>        
-            
-            
-        
-    <div id="button"> 
-      <!-- <input type="submit" value="Verzenden"> -->
+
+            <!--
+     <div id="slider">
+
+         <label for="slider-fill">Welke score geef je deze opleiding op 100?</label><br>
+         <input name="slider-fill" id="slider-fill" value="60" min="0" max="100" step="1" data-highlight="true" type="range">
+
+     </div>
+            -->
+
+
+     <div id="button">
+       <!-- <input type="submit" value="Verzenden"> -->
         
       <button type="submit" class=" btn btn-success">Verzenden</button>   
 
@@ -1984,23 +2230,53 @@
     
     
     </form>
-    
-    
 
 
-    
-    
-    <div id="footer">
+    <div id="heart">
 
-        <h3>WIJ DANKEN JE VOOR JE MEDEWERKING !
-        </h3>
+    Made with <img src="heart.png"/> by Farhood Fazeli
 
     </div>
-    
+
+
+    <!--
+       <div id="footer">
+
+           <h3>WIJ DANKEN JE VOOR JE MEDEWERKING !
+           </h3>
+
+       </div>
+    -->
    
 </div>
     
 <script>
+
+    function validateMyForm() {
+        if (document.getElementById("sendTo").value != null && document.getElementById("sendTo").value != "-1") {
+            return true;
+        }
+        alert("Gelieve een keuze te maken.");
+        return false;
+        returnToPreviousPage();
+    }
+
+
+/*
+
+    function validateForm() {
+        if (document.getElementById("sendTo").value != null && document.getElementById("sendTo").value != "-1") {
+            return true;
+        }
+        alert("Gelieve een keuze te maken.");
+        return false;
+    }
+
+*/
+
+
+
+
 $(document).ready(function(){
     $("form").submit(function(e){
         e.preventDefault();
